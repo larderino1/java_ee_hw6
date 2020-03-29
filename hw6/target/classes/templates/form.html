@@ -1,0 +1,18 @@
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Booklist</title>
+</head>
+<body>
+<th:block th:include="common::my-header" />
+<form action="/addBook" method="post">
+    Title: <input name="Title">
+    <br />
+    ISBN: <input name="ISBN">
+    <br />
+    Author: <input name="Author">
+    <br />
+    <button type="submit">Add</button>
+</form>
+</body>
+</html>
